@@ -1,28 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Sky Studio</title>
-    </head>
+    <style>
+        /* 这里加一点全局设置，让背景填满屏幕 */
+        body {
+            margin: 0;
+            padding: 0;
+            /* 设置背景图 */
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmkcje8Aymz7IjrRd73IFTXwCTSXtHm-qPtBB9_DbqPW33ivVjQJSDT1Iyn9T1fTRF6R_4Ch4aUa7FcVxIhKJwtFNb6TdlW6yw3HgATJtA&s=10");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
 <body>
-    <header>
-        <nav>
-            <strong>Blue Sky Studio</strong>
-            <a href="#lessons">Lessons</a>
-            <a href="#server">MC Server</a>
-            <a href="https://github.com/maxlu9769-lang/bule-sky-studio-web">GitHub</a>
+    <header style="position: sticky; top: 0; z-index: 1000; padding: 10px;">
+        <nav style="
+            background-color: rgba(255, 255, 255, 0.4); 
+            backdrop-filter: blur(10px);
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between; /* 名字在左，链接在右 */
+            align-items: center;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.3);
+        ">
+            <strong style="color: #333;">Blue Sky Studio</strong>
+            <div style="display: flex; gap: 20px;">
+                <a href="#lessons" style="color: #333; text-decoration: none;">Lessons</a>
+                <a href="#server" style="color: #333; text-decoration: none;">MC Server</a>
+                <a href="https://github.com/maxlu9769-lang/bule-sky-studio-web" style="color: #333; text-decoration: none;">GitHub</a>
+            </div>
         </nav>
     </header>
 
-    <hr> ```
+    <main style="
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        padding: 50px 20px;
+    ">
+        <div style="
+            width: 85%; 
+            max-width: 900px;
+            padding: 40px; 
+            background-color: rgba(255, 255, 255, 0.85); 
+            border-radius: 30px; 
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            line-height: 1.6;
+            color: #333;
+        ">
+            <h1 style="text-align: center;">Blue Sky Studio - 引导线 (MaxLine)</h1>
+            
+            <p>引导线是一款非常有趣的音乐节奏游戏。MaxLine 内拥有超多音乐资源和各种难度的关卡，玩家可以自由挑战，跟随节奏完美完成挑战。玩家需要通过跟着节奏点击屏幕控制线条转向，避开障碍物。</p>
 
----
+            <img src="./引导线(MaxLine)下载-引导线(MaxLine)最新版下载v1.4.1 - 游戏鸟_files/08103841ufsz.jpg" style="width: 100%; border-radius: 15px; margin: 20px 0;" alt="引导线">
 
-### 2. 中间内容区 (Your Content)
-这里就是你放 README 翻译内容的地方。
-```html
-    <main>
-        <h1>Welcome to Blue Sky Studio</h1>
-        <p>Exploring Aviation & Digital Arts from scratch.</p>
-        </main>
+            <h3>游戏玩法</h3>
+            <ul>
+                <li>场景与背景音乐完美结合，带来视听双重享受。</li>
+                <li>原创音轨，风格多样，充满惊喜。</li>
+                <li>凭借旋律控制线条移动，挑战手速极限。</li>
+            </ul>
+
+            <h3>游戏特色</h3>
+            <p><strong>1. 创意音游：</strong> 精心原创背景音乐。</p>
+            <p><strong>2. 冒险关卡：</strong> 与全球玩家同台竞技。</p>
+            <p><strong>3. 画面精美：</strong> Unity 3D引擎打造，画质优美。</p>
+
+            <div style="margin-top: 30px; padding: 20px; background: rgba(0,0,0,0.05); border-radius: 15px;">
+                <strong>游戏信息</strong>
+                <ul style="list-style: none; padding: 0; margin-top: 10px;">
+                    <li>💻 系统要求：安卓4.3 / iOS 14及以上</li>
+                    <li>💰 是否收费：免费</li>
+                    <li>🌐 语言：中文</li>
+                    <li>📦 包名：com.MaxStudio.MaxLine</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="color: white; margin-top: 30px; text-align: center;">
+            <h1>Welcome to Blue Sky Studio</h1>
+            <p>Exploring Aviation & Digital Arts from scratch.</p>
+        </div>
+    </main>
+</body>
+</html>
